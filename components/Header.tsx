@@ -1,7 +1,7 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.svg'
 import Link from './Link'
+import Image from './Image'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
@@ -17,7 +17,15 @@ const Header = () => {
       <Link href="/" aria-label={siteMetadata.headerTitle}>
         <div className="flex items-center justify-between">
           <div className="mr-3">
-            <Logo />
+            {/* <Logo /> */}
+            <div
+              // Option A: inline CSS drop-shadow (works without Tailwind config)
+              style={{ filter: 'drop-shadow(0 0 2px rgba(255,255,255,0.85))' }}
+              // Option B (alternative if your Tailwind supports arbitrary values):
+              // className="filter drop-shadow-[0_0_8px_rgba(255,255,255,0.85)]"
+            >
+              <Image src="/static/images/logo.png" width={150} height={40} alt="..." />
+            </div>
           </div>
           {typeof siteMetadata.headerTitle === 'string' ? (
             <div className="hidden h-6 text-2xl font-semibold sm:block">
