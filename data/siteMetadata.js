@@ -9,7 +9,7 @@ const siteMetadata = {
   siteUrl: 'https://server.smkid.dk',
   siteRepo: 'https://github.com/luca2618/SMKID-server-page',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
-  socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
+  socialBanner: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   email: 'sylvester@smkid.dk',
   github: 'https://github.com/luca2618',
   locale: 'en-US',
