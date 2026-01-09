@@ -1,0 +1,54 @@
+# Kom i gang med din egen server
+
+> OPS VI OPRETTER I ØJEBLIKKET IKKE SERVERE PÅ ONLINE ADMODNING. Kom til vores serverdag den xxx
+
+Velkommen til SMKID Serverprojektet! Vi er glade for, at du vil udforske mulighederne og få hands-on erfaring med servere og netværk. Denne guide hjælper dig trin-for-trin med at anmode om din egen virtuelle server (VPS) og komme godt fra start.
+
+---
+
+## 1. Læs vores Retningslinjer og Brugerbetingelser
+
+Inden du anmoder om en server, er det vigtigt, at du læser vores [retningslinjer og regler](guidelines). Disse regler sikrer, at alle brugere har en god og ansvarlig oplevelse på vores platform.
+
+---
+
+## 2. Udfyld Anmodningsskemaet
+
+For at få din egen server skal du først udfylde et anmodningsskema, hvor vi indsamler de nødvendige oplysninger til opsætning og administration. Klik på linket herunder for at gå til anmodningsskemaet.
+
+- **[Anmodningsskema til VPS](link-til-anmodningsskema)**
+
+Når du har sendt skemaet, vil vi gennemgå din anmodning og opsætte serveren til dig så hurtigt som muligt. Du modtager en bekræftelsesmail med loginoplysninger og en introduktion til dit nye servermiljø, når opsætningen er fuldført.
+
+---
+
+## 3. Opret forbindelse til VPN
+
+For at sikre en sikker og stabil forbindelse til din VPS, skal du først oprette forbindelse til vores VPN-netværk. Følg disse trin for at installere og forbinde til VPN’en:
+
+1. Download og installer en VPN-klient (vi anbefaler OpenVPN connect eller en anden kompatibel VPN-klient).
+2. I din bekræftelsesmail vil du finde dine VPN-loginoplysninger og en konfigurationsfil, som du skal importere til VPN-klienten.
+3. Åbn VPN-klienten, importér konfigurationsfilen, og indtast dine loginoplysninger.
+4. Klik på "Connect" for at oprette forbindelse til VPN.
+
+Når du har oprettet forbindelse til VPN, kan du fortsætte til næste trin for at forbinde direkte til din VPS.
+
+---
+
+## 4. Forbind til din VPS
+
+Når du har oprettet forbindelse til VPN og modtaget dine loginoplysninger til serveren, kan du nu oprette forbindelse til din VPS:
+
+1. Aktiver VPN
+2. Gå ind på **[pve1.smkid.dk:8006](pve1.smkid.dk:8006)**
+3. Under "realm" vælg lldap
+4. Log på med dine login oplysninger
+5. Find din server i venstre side (den burde have dit navn)
+6. Click console og brug browser terminalen til at installere dit styre system
+
+**Optional**
+
+7. check din lokale ip med `ip a`
+8. Indstil din egen ssh server, så du kan bruge dine egen terminal eller vscode
+9. opstil en vscode tunnel, så kan du tilgå serveren gennem vscode uden vpn aktiv.
+10. Gå i gang med dit projekt!
